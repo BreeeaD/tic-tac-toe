@@ -8,7 +8,7 @@ public:
 
 	Board(); //constructor
 	void Display() const; //afiseaseaza tabla
-	bool Marcarea(Point Point, Cell mark); //marceaza pe tabla
+	bool Mark(Point Point, Cell mark); //marceaza pe tabla
 	bool Full() const; //verifica daca tabla este plina
 	bool CheckWin(Cell mark) const; //verifica daca este un castigator
 	Cell ThisCell(Point Point) const; //verifica/primeste starea unei celule

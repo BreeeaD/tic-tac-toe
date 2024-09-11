@@ -4,7 +4,7 @@
 class Player {
 public:
 	Player(Cell mark); //constructor
-	Cell Mark() const; //obtine locul unde a marcat jucatorul
+	Cell GetMark() const; //obtine locul unde a marcat jucatorul
 
 private:
 	Cell mark; //cu ce va marca jucatorul (x sau o)
