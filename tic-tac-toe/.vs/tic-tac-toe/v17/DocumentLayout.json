@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\board.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|solutionrelative:tic-tac-toe\\board.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\cell.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|solutionrelative:tic-tac-toe\\cell.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\player.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|solutionrelative:tic-tac-toe\\player.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "player.hpp",
+              "DocumentMoniker": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\player.hpp",
+              "RelativeDocumentMoniker": "tic-tac-toe\\player.hpp",
+              "ToolTip": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\player.hpp",
+              "RelativeToolTip": "tic-tac-toe\\player.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-12T08:51:01.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "board.hpp",
+              "DocumentMoniker": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\board.hpp",
+              "RelativeDocumentMoniker": "tic-tac-toe\\board.hpp",
+              "ToolTip": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\board.hpp",
+              "RelativeToolTip": "tic-tac-toe\\board.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-12T08:40:50.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "cell.hpp",
+              "DocumentMoniker": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\cell.hpp",
+              "RelativeDocumentMoniker": "tic-tac-toe\\cell.hpp",
+              "ToolTip": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\cell.hpp",
+              "RelativeToolTip": "tic-tac-toe\\cell.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-12T08:40:40.671Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

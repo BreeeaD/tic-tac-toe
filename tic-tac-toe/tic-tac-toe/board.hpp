@@ -1,6 +1,6 @@
 #pragma once
 #include "point.hpp"
-enum Cell{G, X, O}; // enumerarea celulei (anume starea acesteia)
+#include "cell.hpp"
 
 class Board {
 public:
