@@ -1,21 +1,15 @@
 # tic-tac-toe
 
 ## Ce reprezintă proiectul.
-Pune bazele pentru un joc tic-tac-toe.
+Proiectul include clasele implementate pentru gestionarea tablei de joc, jucătorilor și a logicii jocului.
 
-## Care sunt regulile jocului.
-Sunt doi jucători, care plasează X și O pe rând, pe o tabla (3x3). Sunt 2 cazuri de finisarea jocului: 
+## Compilarea și rularea
+Am instalat MSYS MINGW64 pentru care am schimbat variabilele de mediu PATH pentru a putea include locațiile g++ și make. În terminal pot folosi mingw32-make pentru a compila și construi proiectul. Pentru rularea jocului se utilizează comanda ./tic-tac-toe.exe .
 
-1. Unul din jucători câștigă dacă plasează într-o linie (verticală, orizontală sau diagonală) simbolul său.
-2. Alt caz este dacă jucătorii nu plasează simbolurile într-o linie, atunci va fi remiză.
-
-## Enumerarea tipurilor de date
-'struct point' - reprezintă o coordonată pe tablă.
-
-'enum Cell' - enumerația reprezintă starea unei celule (Goală, X, O).
-
-'class Board' - clasa care reprezintă tabla de joc și conține logica de gestionare a jocului.
-
-'class Player' - clasa care reprezintă jucătorul având un mark (X sau O).
-
-'class GameEngine' - clasa care reprezintă logica jocului, mutările jucătorului și verificarea condițiilor de finalizare a jocului.
+## Structura fișierelor folosite
+'board.hpp' 'board.cpp' Afișarea tablei de joc
+'gameEngine.hpp' 'gameEngine.cpp' Logica jocului
+'cell.hpp' 'cell.cpp' Enumerarea stării celulei
+'point.hpp' 'point.hpp' Coordonatele punctelor de pe tabla
+'player.hpp' 'player.cpp' Afișarea rândului jucătorilor
+'main.cpp' Fișierul sursă care conține funcția main.
