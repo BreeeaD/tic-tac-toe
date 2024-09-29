@@ -8,8 +8,13 @@ Am instalat MSYS MINGW64 pentru care am schimbat variabilele de mediu PATH pentr
 
 ## Structura fișierelor folosite
 'board.hpp' 'board.cpp' Afișarea tablei de joc
+
 'gameEngine.hpp' 'gameEngine.cpp' Logica jocului
+
 'cell.hpp' 'cell.cpp' Enumerarea stării celulei
+
 'point.hpp' 'point.hpp' Coordonatele punctelor de pe tabla
+
 'player.hpp' 'player.cpp' Afișarea rândului jucătorilor
+
 'main.cpp' Fișierul sursă care conține funcția main.
