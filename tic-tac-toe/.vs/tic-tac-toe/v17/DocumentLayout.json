@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|solutionrelative:tic-tac-toe\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|solutionrelative:tic-tac-toe\\player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\gameEngine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|solutionrelative:tic-tac-toe\\gameEngine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|solutionrelative:tic-tac-toe\\board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\player.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|solutionrelative:tic-tac-toe\\player.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\board.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|solutionrelative:tic-tac-toe\\board.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\cell.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|solutionrelative:tic-tac-toe\\cell.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\player.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E6E249C2-2D41-4573-880F-A55EBD516A6A}|tic-tac-toe\\tic-tac-toe.vcxproj|solutionrelative:tic-tac-toe\\player.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,37 +38,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "player.hpp",
-              "DocumentMoniker": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\player.hpp",
-              "RelativeDocumentMoniker": "tic-tac-toe\\player.hpp",
-              "ToolTip": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\player.hpp",
-              "RelativeToolTip": "tic-tac-toe\\player.hpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-12T08:51:01.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "board.hpp",
-              "DocumentMoniker": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\board.hpp",
-              "RelativeDocumentMoniker": "tic-tac-toe\\board.hpp",
-              "ToolTip": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\board.hpp",
-              "RelativeToolTip": "tic-tac-toe\\board.hpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-12T08:40:50.713Z",
+              "Title": "main.cpp",
+              "DocumentMoniker": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\main.cpp",
+              "RelativeDocumentMoniker": "tic-tac-toe\\main.cpp",
+              "ToolTip": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\main.cpp",
+              "RelativeToolTip": "tic-tac-toe\\main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-28T20:20:55.498Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "player.cpp",
+              "DocumentMoniker": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\player.cpp",
+              "RelativeDocumentMoniker": "tic-tac-toe\\player.cpp",
+              "ToolTip": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\player.cpp",
+              "RelativeToolTip": "tic-tac-toe\\player.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-26T08:50:06.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "gameEngine.cpp",
+              "DocumentMoniker": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\gameEngine.cpp",
+              "RelativeDocumentMoniker": "tic-tac-toe\\gameEngine.cpp",
+              "ToolTip": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\gameEngine.cpp",
+              "RelativeToolTip": "tic-tac-toe\\gameEngine.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-26T08:49:52.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "board.cpp",
+              "DocumentMoniker": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\board.cpp",
+              "RelativeDocumentMoniker": "tic-tac-toe\\board.cpp",
+              "ToolTip": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\board.cpp",
+              "RelativeToolTip": "tic-tac-toe\\board.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-26T08:49:26.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "player.hpp",
+              "DocumentMoniker": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\player.hpp",
+              "RelativeDocumentMoniker": "tic-tac-toe\\player.hpp",
+              "ToolTip": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\player.hpp",
+              "RelativeToolTip": "tic-tac-toe\\player.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-12T08:51:01.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "board.hpp",
+              "DocumentMoniker": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\board.hpp",
+              "RelativeDocumentMoniker": "tic-tac-toe\\board.hpp",
+              "ToolTip": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\board.hpp",
+              "RelativeToolTip": "tic-tac-toe\\board.hpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-12T08:40:50.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "cell.hpp",
               "DocumentMoniker": "E:\\sasa\\univ\\sem3\\C\u002B\u002B\\lab1\\tic-tac-toe\\tic-tac-toe\\tic-tac-toe\\cell.hpp",
               "RelativeDocumentMoniker": "tic-tac-toe\\cell.hpp",
@@ -60,8 +123,7 @@
               "RelativeToolTip": "tic-tac-toe\\cell.hpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-12T08:40:40.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-12T08:40:40.671Z"
             }
           ]
         }

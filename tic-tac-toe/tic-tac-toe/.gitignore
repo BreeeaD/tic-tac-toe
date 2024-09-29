@@ -1,0 +1,5 @@
+#ignora toate fisierele obiecte .o
+*.o
+
+#ignora toate fisierele executabile .exe
+*.exe
