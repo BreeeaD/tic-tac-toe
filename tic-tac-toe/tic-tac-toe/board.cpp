@@ -1,7 +1,7 @@
 #include "board.hpp"
 #include <iostream>
 
-Board::Board() {
+Board::Board() { //constructor implicit
 	grid = new Cell * [marime];
 	for (int i = 0; i < marime; i++) {
 		grid[i] = new Cell[marime];
@@ -9,6 +9,45 @@ Board::Board() {
 			grid[i][j] = G; //va initializa toate celulele ca celule libere/goale
 		}
 	}
+}
+
+Board::Board(const Board& other) { //constructor de parametrii
+	grid = new Cell * [marime];
+	for (int i = 0; i < marime; i++) {
+		grid[i] = new Cell[marime];
+		for (int j = 0; j < marime; j++) {
+			grid[i][j] = other.grid[i][j];
+		}
+	}
+}
+
+Board::~Board() { //destructor
+	for (int i = 0; i < marime; i++) {
+		delete[] grid[i];
+	}
+	delete[] grid;
+}
+
+Board& Board::operator=(const Board& other) { //operator de copiere
+	if (this != &other) {
+		for (int i = 0; i < marime; i++) {
+			for (int j = 0; j < marime; j++) {
+				grid[i][j] = other.grid[i][j];
+			}
+		}
+	}
+	return *this;
+}
+
+bool Board::operator==(const Board& other) const { //operator de comparatie
+	for (int i = 0; i < marime; i++) {
+		for (int j = 0; j < marime; j++) {
+			if (grid[i][j] != other.grid[i][j]) {
+				return false;
+			}
+		}
+	}
+	return true;
 }
 
 void Board::Display() const {
@@ -22,11 +61,15 @@ void Board::Display() const {
 }
 
 bool Board::Mark(Point point, Cell mark) {
-	if (point.x >= 0 && point.x < marime && point.y >= 0 && point.y < marime && grid[point.x][point.y] == G) { //se verifica conditiile pentru marcarea celulei
+	if (Valid(point) && grid[point.x][point.y] == G) { //se verifica conditiile pentru marcarea celulei
 		grid[point.x][point.y] = mark; //marceaza pozitia 
 		return true; //indica ca marcajul a fost pus
 	}
 	return false; //indica ca marcajul nu a fost efectuat
+}
+
+bool Board::Valid(const Point& point) const {
+	return point.x >= 0 && point.x < marime && point.y >= 0 && point.y < marime;
 }
 
 bool Board::Full() const {
@@ -38,6 +81,27 @@ bool Board::Full() const {
 		}
 	}
 	return true; //daca nu gaseste nicio celula goala returneaza true
+}
+
+std::istream& operator >> (std::istream& in, Board& board){//operator de citire
+	for (int i = 0; i < Board::marime; i++) {
+		for (int j = 0; j < Board::marime; j++) {
+			int val;
+			in >> val;
+			board.grid[i][j] = static_cast<Cell>(val);
+		}
+	}
+	return in;
+}
+
+std::ostream& operator >> (std::ostream& out, const Board& board) { //operator de afisare
+	for (int i = 0; i < Board::marime; i++) {
+		for (int j = 0; j < Board::marime; j++) {
+			out << (board.grid[i][j] == G ? '.' : (board.grid[i][j] == X ? 'X' : 'O')) << " ";
+		}
+		out << std::endl;
+	}
+	return out;
 }
 
 bool Board::CheckWin(Cell mark) const {

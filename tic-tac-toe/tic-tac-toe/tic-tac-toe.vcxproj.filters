@@ -30,6 +30,9 @@
     <ClInclude Include="cell.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="abstract_gameEntity.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="board.cpp">

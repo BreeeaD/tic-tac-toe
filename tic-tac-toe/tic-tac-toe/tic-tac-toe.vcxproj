@@ -130,6 +130,7 @@
     <ClInclude Include="board.hpp" />
     <ClInclude Include="cell.hpp" />
     <ClInclude Include="gameEngine.hpp" />
+    <ClInclude Include="abstract_gameEntity.hpp" />
     <ClInclude Include="player.hpp" />
     <ClInclude Include="point.hpp" />
   </ItemGroup>
