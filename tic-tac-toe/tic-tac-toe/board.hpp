@@ -3,19 +3,21 @@
 #include "cell.hpp"
 #include <iostream>
 #include "abstract_gameEntity.hpp"
+#include <vector>
+#include <memory>
 
-class Board : abstract_gameEntity{
+class Board : public abstract_gameEntity{
 	static const int marime = 3; //dimensiunea tablei care dupa reguli este 3x3
-	Cell** grid; //reprezentarea tablei printro matrice
+	std::vector<std::vector<Cell>> grid; //reprezentarea tablei printro matrice
 public:
 	
 	Board(); //constructor implicit
 
-	Board(const Board& other); //constructor de parametrii
+	Board(const Board& other) = default; //constructor de parametrii
 
-	~Board(); //destructorul pentru eliberarea memoriei alocata dinamic pentru grid
+	~Board() = default; //destructorul pentru eliberarea memoriei alocata dinamic pentru grid
 
-	Board& operator=(const Board& other); //operator de copiere
+	Board& operator=(const Board& other) = default; //operator de copiere
 
 	bool operator==(const Board& other) const;//operator de comparatie
 
@@ -29,7 +31,7 @@ public:
 
 	friend std::istream& operator >> (std::istream& in, Board& board); //operator de citire
 
-	friend std::ostream& operator >> (std::ostream& out, const Board& board); //operator de afisare
+	friend std::ostream& operator << (std::ostream& out, const Board& board); //operator de afisare
 
 private:
 	

@@ -11,9 +11,9 @@ public:
 
 	Player(Cell mark); //constructor de parametrii
 
-	Player(const Player& other); //constructor de copiere
+	Player(const Player& other) = default; //constructor de copiere
 
-	Player& operator=(const Player& other); //operator de copiere
+	Player& operator=(const Player& other) = default; //operator de copiere
 
 	bool operator==(const Player& other) const; //operator de comparatie
 

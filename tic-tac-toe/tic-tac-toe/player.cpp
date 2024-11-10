@@ -5,15 +5,6 @@ Player::Player() : mark(G){} //constructor implicit
 
 Player::Player(Cell mark) : mark(mark){} //constructor de parametrii
 
-Player::Player(const Player& other) : mark(other.mark) {} //constructor de copiere
-
-Player& Player::operator=(const Player& other) { //operator de copiere
-	if (this != &other) {
-		mark = other.mark;
-	}
-	return *this;
-}
-
 bool Player::operator ==(const Player& other) const { //operator de comparatie
 	return mark == other.mark;
 }

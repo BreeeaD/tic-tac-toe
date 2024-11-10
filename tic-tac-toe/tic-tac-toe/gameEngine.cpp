@@ -1,15 +1,32 @@
 #include "gameEngine.hpp"
 #include <iostream>
 
-GameEngine::GameEngine(Player p1, Player p2) :player1(p1),player2(p2), curent(p1){}//initializarea jucatorilor si jucatorul curent va fi p1
+GameEngine::GameEngine(Player p1, Player p2) :player1(std::move(p1)),player2(std::move(p2)), curent(player1){}//initializarea jucatorilor si jucatorul curent va fi p1
 
 void GameEngine::Start() {
-	while (!board.Full() && !board.CheckWin(player1.GetMark()) && !board.CheckWin(player2.GetMark())) {
-		board.Display(); //afiseaza tabla
+	//while (!board.Full() && !board.CheckWin(player1.GetMark()) && !board.CheckWin(player2.GetMark())) {
+		//board.Display(); //afiseaza tabla
+		//YourTurn();
+		//SwitchPlayer();
+	//}
+	//GameOver();
+
+	board.Display();
+
+	while (true) {
 		YourTurn();
+		board.Display();
+
+		if (board.CheckWin(curent.GetMark())) {
+			std::cout << "Player " << (curent.GetMark() == X ? "X" : "O") << " WINS!\n";
+			break;
+		}
+		else if (board.Full()) {
+			std::cout << "EGalitate!\n";
+			break;
+		}
 		SwitchPlayer();
 	}
-	GameOver();
 }
 
 void GameEngine::SwitchPlayer() {

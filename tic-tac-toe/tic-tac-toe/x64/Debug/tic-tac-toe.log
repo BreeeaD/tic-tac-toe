@@ -1,4 +1,5 @@
-﻿  gameEngine.cpp
+﻿  board.cpp
+  gameEngine.cpp
   main.cpp
   player.cpp
   Generating Code...
