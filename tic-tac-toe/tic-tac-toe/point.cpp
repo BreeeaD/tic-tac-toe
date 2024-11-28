@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "point.hpp"
 
 Point::Point() : x(0), y(0) {} //constructor implicit

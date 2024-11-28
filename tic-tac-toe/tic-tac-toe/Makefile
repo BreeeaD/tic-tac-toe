@@ -1,17 +1,26 @@
-CC = g++ #numele compilatorului
-CXXFLAGS = -O2 -std=c++20 #optiuni de compilare
+CXX = g++
+CXXFLAGS = -std=c++17 -I"E:/vcPKG/vcpkg/installed/x64-windows/include" -Wall -Wextra
+LDFLAGS = -L"E:/vcPKG/vcpkg/installed/x64-windows/lib" -lsqlite3
 
-SRC = tic-tac-toe.exe #fisierul executabil
-OBJ = board.o player.o cell.o gameEngine.o point.o main.o #lista de obiecte 
+LIBRARY = libgame.a
 
-all: $(SRC)
+SOURCES = board.cpp player.cpp gameEngine.cpp cell.cpp point.cpp
+HEADERS = board.hpp player.hpp gameEngine.hpp cell.hpp point.hpp
+OBJECTS = $(SOURCES:.cpp=.o)
 
-$(SRC): $(OBJ) #SRC care ii tic-tac-toe depinde de OBJ care sunt toate obiectele pentru crearea fisierelor.o
-	$(CC) -o$(SRC) $(OBJ) 
+MAIN = main.cpp
+EXECUTABLE = game
 
-%.o: %.cpp #compilarea fisierelor .cpp in cele .o
-	$(CC) $(CXXFLAGS) -o $@ -c $<
+all: $(LIBRARY) $(EXECUTABLE)
 
-clean: 
-	rm -f *.o $(SRC)
+$(LIBRARY): $(OBJECTS)
+	@ar rcs $@ $^
 
+$(EXECUTABLE): $(MAIN) $(LIBRARY)
+	$(CXX) $(CXXFLAGS) $(MAIN) -o $(EXECUTABLE) $(LDFLAGS) -L. -lgame
+
+%.o: %.cpp $(HEADERS)
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+clean:
+	del /Q *.o *.a $(EXECUTABLE)

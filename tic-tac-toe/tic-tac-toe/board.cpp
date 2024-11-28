@@ -1,3 +1,4 @@
+#include "pch.h"
 #include "board.hpp"
 #include <iostream>
 #include <algorithm>

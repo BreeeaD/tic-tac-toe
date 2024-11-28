@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\vcpkg.E.vcPKG.vcpkg.1.0.0\build\native\vcpkg.E.vcPKG.vcpkg.props" Condition="Exists('..\packages\vcpkg.E.vcPKG.vcpkg.1.0.0\build\native\vcpkg.E.vcPKG.vcpkg.props')" />
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -133,16 +134,48 @@
     <ClInclude Include="abstract_gameEntity.hpp" />
     <ClInclude Include="player.hpp" />
     <ClInclude Include="point.hpp" />
+    <ClInclude Include="statistic.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="board.cpp" />
-    <ClCompile Include="cell.cpp" />
-    <ClCompile Include="gameEngine.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="player.cpp" />
-    <ClCompile Include="point.cpp" />
+    <ClCompile Include="main.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="statistic.cpp">
+      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpp20</LanguageStandard>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\abstract_gameEntityLIB\abstract_gameEntityLIB.vcxproj">
+      <Project>{25fb0136-5837-4b52-b2f2-723353735889}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\boardLIB\boardLIB.vcxproj">
+      <Project>{0255243a-a90e-46e9-8cdb-2a6dfcd9d5bc}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\cellLIB\cellLIB.vcxproj">
+      <Project>{8ec9735d-811d-4064-9743-0cd1ced74a24}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\gameEngineLIB\gameEngineLIB.vcxproj">
+      <Project>{2aee3641-71da-453e-83c1-6ec17f133ab3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\playerLIB\playerLIB.vcxproj">
+      <Project>{e8dfa2f7-ef8e-4f6d-a4ed-53bfe0f912f2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\pointLIB\pointLIB.vcxproj">
+      <Project>{aa8e49c0-905d-4d45-b447-78fbabc6ef42}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\vcpkg.E.vcPKG.vcpkg.1.0.0\build\native\vcpkg.E.vcPKG.vcpkg.targets" Condition="Exists('..\packages\vcpkg.E.vcPKG.vcpkg.1.0.0\build\native\vcpkg.E.vcPKG.vcpkg.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\vcpkg.E.vcPKG.vcpkg.1.0.0\build\native\vcpkg.E.vcPKG.vcpkg.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\vcpkg.E.vcPKG.vcpkg.1.0.0\build\native\vcpkg.E.vcPKG.vcpkg.props'))" />
+    <Error Condition="!Exists('..\packages\vcpkg.E.vcPKG.vcpkg.1.0.0\build\native\vcpkg.E.vcPKG.vcpkg.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\vcpkg.E.vcPKG.vcpkg.1.0.0\build\native\vcpkg.E.vcPKG.vcpkg.targets'))" />
+  </Target>
 </Project>

@@ -1,5 +1,22 @@
 #ignora toate fisierele obiecte .o
 *.o
 
+*.a
+
+lib/
+
+-p/
+
+.vs/
+*.ipch
+*.suo
+*.user
+*.cache
+*.log
+
+Debug/
+Release/
+
+
 #ignora toate fisierele executabile .exe
 *.exe

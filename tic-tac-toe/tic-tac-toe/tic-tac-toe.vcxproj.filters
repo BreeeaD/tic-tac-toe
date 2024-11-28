@@ -33,25 +33,19 @@
     <ClInclude Include="abstract_gameEntity.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="statistic.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="board.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cell.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="gameEngine.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="player.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-    <ClCompile Include="point.cpp">
-      <Filter>Header Files</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>Header Files</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="statistic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

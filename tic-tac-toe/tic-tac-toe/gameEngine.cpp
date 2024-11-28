@@ -1,7 +1,12 @@
+#include "pch.h"
 #include "gameEngine.hpp"
 #include <iostream>
+//#include "E:\sasa\univ\sem3\C++\lab1\tic-tac-toe\tic-tac-toe\tic-tac-toe\statistic.hpp"
+#include "..\tic-tac-toe\statistic.hpp"
 
-GameEngine::GameEngine(Player p1, Player p2) :player1(std::move(p1)),player2(std::move(p2)), curent(player1){}//initializarea jucatorilor si jucatorul curent va fi p1
+GameEngine::GameEngine(Player p1, Player p2) :player1(std::move(p1)),player2(std::move(p2)), curent(player1), stat("..\\tic-tac-toe\\database\\game_stats.db") {}//initializarea jucatorilor si jucatorul curent va fi p1
+
+
 
 void GameEngine::Start() {
 	//while (!board.Full() && !board.CheckWin(player1.GetMark()) && !board.CheckWin(player2.GetMark())) {
@@ -10,8 +15,11 @@ void GameEngine::Start() {
 		//SwitchPlayer();
 	//}
 	//GameOver();
+	std::cout << "\nStatistica jocurilor:\n";
+	stat.displayStat();
 
 	board.Display();
+	std::string result;
 
 	while (true) {
 		YourTurn();
@@ -19,6 +27,7 @@ void GameEngine::Start() {
 
 		if (board.CheckWin(curent.GetMark())) {
 			std::cout << "Player " << (curent.GetMark() == X ? "X" : "O") << " WINS!\n";
+			stat.AddResult(curent.GetMark() == X ? "X" : "O"); //
 			break;
 		}
 		else if (board.Full()) {
@@ -45,13 +54,22 @@ void GameEngine::YourTurn() {
 
 void GameEngine::GameOver() { 
 	board.Display(); //afiseaza tabla
+	std::string result;
+
 	if (board.CheckWin(player1.GetMark())) { //verifica daca playerul 1 a castigat
+		result = "Player X wins";
 		std::cout << "Player X e castigatorul!\n";
 	}
 	else if (board.CheckWin(player2.GetMark())) { //verifica daca playerul 2 a castigat
+		result = "Player O wins";
 		std::cout << "Player O e castigatorul!\n";
 	}
 	else {
+		result = "Draw";
 		std::cout << "Egalitate!\n"; //al treilea caz cand tabla este plina si nu este niciun jucator castigator, egalitate
 	}
+
+	stat.AddResult(result);
+	std::cout << "\nStatistica jocurilor:\n";
+	stat.displayStat();
 }
