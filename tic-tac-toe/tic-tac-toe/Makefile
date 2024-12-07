@@ -4,7 +4,7 @@ LDFLAGS = -L"E:/vcPKG/vcpkg/installed/x64-windows/lib" -lsqlite3
 
 LIBRARY = libgame.a
 
-SOURCES = board.cpp player.cpp gameEngine.cpp cell.cpp point.cpp
+SOURCES = board.cpp player.cpp gameEngine.cpp cell.cpp point.cpp test.cpp
 HEADERS = board.hpp player.hpp gameEngine.hpp cell.hpp point.hpp
 OBJECTS = $(SOURCES:.cpp=.o)
 

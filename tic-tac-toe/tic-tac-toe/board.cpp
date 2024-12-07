@@ -5,7 +5,7 @@
 
 Board::Board() : grid(marime, std::vector<Cell>(marime, G)){}
 	
-bool Board::operator==(const Board& other) const { //operator de comparatie
+bool Board::operator==(const Board& other) const { 
 	return grid == other.grid;
 }
 
@@ -20,11 +20,11 @@ void Board::Display() const {
 }
 
 bool Board::Mark(Point point, Cell mark) {
-	if (Valid(point) && grid[point.x][point.y] == G) { //se verifica conditiile pentru marcarea celulei
-		grid[point.x][point.y] = mark; //marceaza pozitia 
-		return true; //indica ca marcajul a fost pus
+	if (Valid(point) && grid[point.x][point.y] == G) { 
+		grid[point.x][point.y] = mark; 
+		return true; 
 	}
-	return false; //indica ca marcajul nu a fost efectuat
+	return false; 
 }
 
 bool Board::Valid(const Point& point) const {
@@ -39,7 +39,7 @@ bool Board::Full() const {
 		});
 }
 
-std::istream& operator >> (std::istream& in, Board& board){//operator de citire
+std::istream& operator >> (std::istream& in, Board& board){
 	for (auto& row : board.grid) {
 		for (auto& cell: row) {
 			int val;
@@ -50,7 +50,7 @@ std::istream& operator >> (std::istream& in, Board& board){//operator de citire
 	return in;
 }
 
-std::ostream& operator << (std::ostream& out, const Board& board) { //operator de afisare
+std::ostream& operator << (std::ostream& out, const Board& board) {
 	for (auto& row : board.grid) {
 		for (auto& cell : row) {
 			out << (cell == G ? '.' : (cell == X ? 'X' : 'O')) << " ";
@@ -61,14 +61,14 @@ std::ostream& operator << (std::ostream& out, const Board& board) { //operator d
 }
 
 bool Board::CheckWin(Cell mark) const {
-	return CheckRowForWin(mark) || CheckColForWin(mark) || CheckDiagForWin(mark);//determina daca un jucator a castigat dupa o anumita consitie data
+	return CheckRowForWin(mark) || CheckColForWin(mark) || CheckDiagForWin(mark);
 }
 
 Cell Board::ThisCell(Point point) const {
 	if (Valid(point)) {
 		return grid[point.x][point.y];
 	}
-	return G;//daca coordonatele nu sunt corecte se returneaza G
+	return G;
 }
 
 bool Board::CheckRowForWin(Cell mark) const {

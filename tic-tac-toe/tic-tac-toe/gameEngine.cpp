@@ -27,7 +27,7 @@ void GameEngine::Start() {
 
 		if (board.CheckWin(curent.GetMark())) {
 			std::cout << "Player " << (curent.GetMark() == X ? "X" : "O") << " WINS!\n";
-			stat.AddResult(curent.GetMark() == X ? "X" : "O"); //
+			stat.AddResult(curent.GetMark() == X ? "X" : "O"); 
 			break;
 		}
 		else if (board.Full()) {
@@ -39,34 +39,34 @@ void GameEngine::Start() {
 }
 
 void GameEngine::SwitchPlayer() {
-	curent = (curent.GetMark() == player1.GetMark()) ? player2 : player1;//schimba jucatorul curent ori lasa acelasi jucator
+	curent = (curent.GetMark() == player1.GetMark()) ? player2 : player1;
 }
 
 void GameEngine::YourTurn() {
 	Point point;
-	std::cout << "Player " << (curent.GetMark() == X ? "X" : "O") << " turn. Selectati randul si coloana: ";//cererea de la jucator sa introduca coordonatele
-	std::cin >> point.x >> point.y; //citeste coordonatele ale punctului de pe board pe care jucatorul le marcheaza
-	if (!board.Mark(point, curent.GetMark())) { //daca coordonata anumita este ocupata atunci il lasa pe jucatorul oarecare sa mai introduca inca odata coordonatele
+	std::cout << "Player " << (curent.GetMark() == X ? "X" : "O") << " turn. Selectati randul si coloana: ";
+	std::cin >> point.x >> point.y;
+	if (!board.Mark(point, curent.GetMark())) {
 		std::cout << "Asa miscare nu e permisa. Incearca din nou.\n"; 
 		YourTurn();
 	}
 }
 
 void GameEngine::GameOver() { 
-	board.Display(); //afiseaza tabla
+	board.Display();
 	std::string result;
 
-	if (board.CheckWin(player1.GetMark())) { //verifica daca playerul 1 a castigat
+	if (board.CheckWin(player1.GetMark())) {
 		result = "Player X wins";
 		std::cout << "Player X e castigatorul!\n";
 	}
-	else if (board.CheckWin(player2.GetMark())) { //verifica daca playerul 2 a castigat
+	else if (board.CheckWin(player2.GetMark())) {
 		result = "Player O wins";
 		std::cout << "Player O e castigatorul!\n";
 	}
 	else {
 		result = "Draw";
-		std::cout << "Egalitate!\n"; //al treilea caz cand tabla este plina si nu este niciun jucator castigator, egalitate
+		std::cout << "Egalitate!\n";
 	}
 
 	stat.AddResult(result);
