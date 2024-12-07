@@ -10,11 +10,9 @@ Sunt doi jucători, care plasează X și O pe rând, pe o tabla (3x3). Sunt 2 ca
 2. Alt caz este dacă jucătorii nu plasează simbolurile într-o linie, atunci va fi remiză.
 
 ## Dependențele:
--Mediu de dezvoltare: Proiectul a fost dezvoltat și testat folosind Visual Studio 2022, dar poate fi construit și utilizând Makefile.
-
--Biblioteca externă SQLite3(pentru gestionarea statisticii)
-
--MSVC Compiler
+*Mediu de dezvoltare: Proiectul a fost dezvoltat și testat folosind Visual Studio 2022, dar poate fi construit și utilizând Makefile.
+*Biblioteca externă SQLite3(pentru gestionarea statisticii)
+*MSVC Compiler
 
 ## Arhitectura jocului
 1. Board: Reprezintă tabla de joc ca o matrice 3x3, cu funcții pentru a marca o poziție, a verifica câștigătorii și a verifica dacă tabla este plină.
