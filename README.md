@@ -11,7 +11,9 @@ Sunt doi jucători, care plasează X și O pe rând, pe o tabla (3x3). Sunt 2 ca
 
 ## Dependențele:
 -Mediu de dezvoltare: Proiectul a fost dezvoltat și testat folosind Visual Studio 2022, dar poate fi construit și utilizând Makefile.
+
 -Biblioteca externă SQLite3(pentru gestionarea statisticii)
+
 -MSVC Compiler
 
 ## Arhitectura jocului
